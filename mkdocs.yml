@@ -3,25 +3,33 @@ site_name: Raymond Chen's Website
 theme:
     name: 'material'
     palette:
+      # Light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: orange
+        accent: amber
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
 
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+      # Dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: orange
+        accent: amber
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    font:
+      text: 'PT Serif'
+      code: 'Roboto Mono'
 
 # Extensions
 markdown_extensions:
   - footnotes
-  # - attr_list
+  - attr_list
+  - md_in_html
   - pymdownx.arithmatex:
       generic: true
   # - pymdownx.superfences
@@ -49,14 +57,16 @@ markdown_extensions:
 
 plugins:
   - search
+  - tags
   - roamlinks
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
+  - glightbox
+  # - rss:
+  #     match_path: blog/posts/.* 
+  #     date_from_meta:
+  #       as_creation: date
+  #     categories:
+  #       - categories
+  #       - tags
 
 extra_javascript:
   - javascripts/mathjax.js
