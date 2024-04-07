@@ -4,9 +4,8 @@ tags:
   - tips
   - snippets
 title: Git commands test
-created: Wednesday, February 28th 2024, 2:23:03 pm
-date updated: Tuesday, March 19th 2024, 9:26:00 am
-date: 2024-03-19
+created: 2024-03-17
+date: 2024-04-07
 ---
 Show the diff between the current branch and the target branch and show file names only.
 ```shell

@@ -1,4 +1,4 @@
-site_name: obsidian-mkdocs template
+site_name: Raymond Chen's Website
 
 theme:
     name: 'material'
@@ -7,19 +7,15 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
-      accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
-      accent: blue
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode
 
 # Extensions
@@ -44,6 +40,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
   - toc:
       permalink: true
@@ -51,7 +50,6 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - blog
   - rss:
       match_path: blog/posts/.* 
       date_from_meta:
