@@ -1,10 +1,9 @@
 ---
-title: Paper Reading 001 - Fighting Copycat Agents in Behavioral Cloning from Observation Histories
+title: "001 - Fighting Copycat Agents in Behavioral Cloning from Observation Histories"
 created: 2024-04-07
 tags:
-  - paper
-  - imitation learning
-date: 2024-04-07
+  - Paper Reading
+  - Imitation Learning
 ---
 
 !!! note "Paper Card"
@@ -14,7 +13,7 @@ date: 2024-04-07
 	 * Correspoding author: Yang Gao (Tsinghua University, UC Berkeley)
 	 * Venue: NeurIPS 2020
 	 * Open source: No
-	 * Tags: Imitation Learning, Casual Confusion
+	 * Key Words: Imitation Learning, Casual Confusion
 
 ## Copycat problem
 **The copycat problem:** When expert actions are strongly correlated over time, the imitative policy tend to learn to output previous actions.

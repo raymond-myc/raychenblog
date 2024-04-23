@@ -57,7 +57,10 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags
+  - git-revision-date-localized:
+      type: iso_date
+  - tags:
+      tags_file: tags.md
   - roamlinks
   - glightbox
   # - rss:
